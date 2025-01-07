@@ -5,121 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carine's Vocal Coaching</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1A1A1A;
-            color: #FFFFFF;
-        }
+    /* Body */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FAF3E0; /* Creamy background */
+        color: #1A1A1A; /* Text color adjusted for better contrast */
+    }
 
-        /* Header */
-        header {
-            background-color: #243B55;
-            padding: 20px;
-            text-align: center;
-        }
+    /* Header */
+    header {
+        background-color: #243B55;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px; /* Rounded corners for header */
+        margin: 10px; /* Space around the header */
+    }
 
-        header h1 {
-            font-size: 2.5em;
-            color: #F5D547;
-        }
+    header h1 {
+        font-size: 2.5em;
+        color: #F5D547;
+    }
 
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/hero.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            color: #F5D547;
-        }
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/hero.jpg?raw=true');
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px; /* Rounded corners for the hero section */
+        margin: 10px; /* Space around the section */
+        color: #243B55; /* Text color for better contrast on the hero section */
+    }
 
-        .hero h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
+    /* Common Section Styles */
+    section {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: #FFFFFF; /* White background for contrast */
+        border-radius: 15px; /* Rounded corners for all sections */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
 
-        /* Common Section Styles */
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    /* About Section */
+    .about {
+        background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/about.jpg?raw=true');
+        background-size: cover;
+        background-position: center;
+        color: #FFFFFF;
+        background-blend-mode: overlay;
+        border-radius: 15px;
+    }
 
-        .about, .services, .testimonials, .contact {
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+    /* Services Section */
+    .services {
+        background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/services.jpg?raw=true');
+        background-size: cover;
+        background-position: center;
+        color: #FFFFFF;
+        background-blend-mode: overlay;
+        border-radius: 15px;
+    }
 
-        /* About Section */
-        .about {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/about.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            color: #FFFFFF;
-            background-blend-mode: overlay;
-        }
+    /* Testimonials Section */
+    .testimonials {
+        background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/testimonials.jpg?raw=true');
+        background-size: cover;
+        background-position: center;
+        color: #FFFFFF;
+        background-blend-mode: overlay;
+        border-radius: 15px;
+    }
 
-        /* Services Section */
-        .services {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/services.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            color: #FFFFFF;
-            background-blend-mode: overlay;
-        }
+    /* Contact Section */
+    .contact {
+        background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/contact.jpg?raw=true');
+        background-size: cover;
+        background-position: center;
+        color: #FFFFFF;
+        background-blend-mode: overlay;
+        border-radius: 15px;
+    }
 
-        /* Testimonials Section */
-        .testimonials {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/testimonials.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            color: #FFFFFF;
-            background-blend-mode: overlay;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/contact.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            color: #FFFFFF;
-            background-blend-mode: overlay;
-        }
-
-        /* Headings */
-        h2 {
-            color: #F5D547;
-        }
-
-        /* Lists */
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            background-color: rgba(51, 51, 51, 0.8);
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-
-        /* Contact Section Text */
-        .contact p {
-            margin: 10px 0;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #243B55;
-            color: #F5D547;
-        }
-    </style>
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #243B55;
+        color: #F5D547;
+        border-radius: 10px;
+        margin: 10px;
+    }
+</style>
 </head>
 <body>
     <header>
