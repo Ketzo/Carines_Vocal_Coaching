@@ -11,20 +11,42 @@
             margin: 0;
             padding: 0;
             background-color: #FAF3E0; /* Creamy background */
-            color: #1A1A1A; /* Adjusted text color */
+            color: #1A1A1A;
+        }
+
+        /* Navigation Menu */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #243B55;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #F5D547;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
         }
 
         /* Header */
         header {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/header1.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
             background-color: #243B55;
             padding: 20px;
             text-align: center;
-            border-radius: 10px; /* Rounded corners */
+            border-radius: 10px;
             margin: 20px auto;
-            max-width: 1200px; /* Align with body width */
+            max-width: 1200px;
         }
 
         header h1 {
@@ -39,7 +61,6 @@
             background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/hero.jpg?raw=true');
             background-size: cover;
             background-position: center;
-            background-color: #243B55; /* Fallback background */
             border-radius: 20px;
             margin: 20px auto;
             max-width: 1200px;
@@ -61,42 +82,6 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
 
-        /* About Section */
-        .about {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/about.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            background-color: #FFFFFF;
-            color: #1A1A1A;
-        }
-
-        /* Services Section */
-        .services {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/services.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            background-color: #FFFFFF; /* Fallback */
-            color: #1A1A1A;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/testimonials.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            background-color: #FFFFFF; /* Fallback */
-            color: #1A1A1A;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/contact.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            background-color: #FFFFFF; /* Fallback */
-            color: #1A1A1A;
-        }
-
         /* Footer */
         footer {
             text-align: center;
@@ -110,35 +95,32 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1></h1>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#bookings">Bookings</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Carine's Vocal Coaching</h1>
     </header>
+
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Singing lessons for the sydney south west region.</h1>
+        <h1>Offering private singing lessons to unlock your vocal potential in the Liverpool Region.</h1>
     </section>
 
+    <!-- About Section -->
     <section class="about">
         <h2>About Carine</h2>
-        <p>
-            Hi my name is Carine. I'm a graduate of Bachelor of Music from Excelsia College (formerly Wesley Institute). I specialize in Contemporary singing.
-
-I've been a vocal coach since 2018. I perform at different gigs with my band at wedding ceremonies, receptions, functions, etc. 
-
-I'm also a session musician and songwriter. I've done multiple recording sessions for different albums, singles, projects, etc. Performed for choir gigs and as lead singer for global C3 conference, Christmas productions, many end of degree recitals, etc.
-
-Other music experiences also include my sound engineering internship with professional sound engineers. I've also conducted and transcribed songs for choir.
-
-about my lessons:
-
-🎶ABOUT MY UNIQUE VOCAL LESSONS🎵 
-
-I'm a professional musician that performs regularly at events, recording sessions, etc. I'm constantly learning and updating my skills and knowledge about my craft. I put my heart and soul into every single student I have and help them better themselves. My lessons are fun, engaging and individually customized as everyone has a different voice. From creative warm ups to unique exercises for vocal techniques, I made sure everyone is learning at their own speed. I can help you get to know the strengths 💪and weaknesses of your voice, find your own musical style and even start writing your own songs. My aim is to get you strong enough so you won't have to rely on me anymore! Book via enquiry or text. 🙂
-
-
-        </p>
+        <p>Hi, my name is Carine. I'm a graduate of Bachelor of Music from Excelsia College...</p>
     </section>
 
-    <section class="services">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <h2>Services</h2>
         <ul>
             <li>30-minute and 1-hour private sessions</li>
@@ -150,22 +132,21 @@ I'm a professional musician that performs regularly at events, recording session
         </ul>
     </section>
 
-    <section class="testimonials">
-        <h2>Testimonials</h2>
-        <ul>
-            <li>"Carine is an exceptional vocal coach..."</li>
-            <li>"I've had multiple sessions with Carine..."</li>
-            <li>"Carine provides practical advice..."</li>
-        </ul>
+    <!-- Bookings Section -->
+    <section id="bookings">
+        <h2>Bookings</h2>
+        <p>Coming soon: Online booking form for your convenience.</p>
     </section>
 
-    <section class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <h2>Contact</h2>
         <p>Email: carineyee12@gmail.com</p>
         <p>Phone: 0420361088</p>
         <p>Studio Address: 47A Romney Crescent, Miller 2168</p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Carine's Vocal Coaching. All Rights Reserved.</p>
     </footer>
