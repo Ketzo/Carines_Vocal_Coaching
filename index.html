@@ -96,6 +96,20 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             color: #4A2E19; /* Text color */
         }
+        /* About section content layout */
+        .about-content {
+            display: flex;
+            align-items: center;  /* Vertically centers the items */
+            gap: 20px;            /* Adds space between the image and text */
+            flex-wrap: wrap;      /* Allows wrapping on smaller screens */
+        }
+        
+        /* Style for the image */
+        .about-image {
+            width: 250px;         /* Set a fixed width or adjust as needed */
+            height: auto;         /* Maintains the image aspect ratio */
+            border-radius: 10px;  /* Optional: adds rounded corners */
+        }
 
         /* Footer */
         footer {
@@ -131,14 +145,20 @@
     <!-- About Section -->
     <section class="about">
         <h2>About Me</h2>
-        <p>Hi my name is Carine. I'm a graduate of Bachelor of Music from Excelsia College (formerly Wesley Institute). I specialize in Contemporary singing.
-
-I've been a vocal coach since 2018. I perform at different gigs with my band at wedding ceremonies, receptions, functions, etc. 
-
-I'm also a session musician and songwriter. I've done multiple recording sessions for different albums, singles, projects, etc. Performed for choir gigs and as lead singer for global C3 conference, Christmas productions, many end of degree recitals, etc.
-
-Other music experiences also include my sound engineering internship with professional sound engineers. I've also conducted and transcribed songs for choir.</p>
+        <div class="about-content">
+            <img src='https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/carine_sing.jpg?raw=true' alt="Carine" class="about-image">
+            <p>
+                Hi, my name is Carine. I'm a graduate of Bachelor of Music from Excelsia College (formerly Wesley Institute). I specialize in Contemporary singing.
+                <br><br>
+                I've been a vocal coach since 2018. I perform at different gigs with my band at wedding ceremonies, receptions, functions, etc.
+                <br><br>
+                I'm also a session musician and songwriter. I've done multiple recording sessions for different albums, singles, projects, etc. I have performed for choir gigs and as lead singer for global C3 conference, Christmas productions, many end of degree recitals, etc.
+                <br><br>
+                Other music experiences also include my sound engineering internship with professional sound engineers. I've also conducted and transcribed songs for choir.
+            </p>
+        </div>
     </section>
+
 
     <!-- Services Section -->
     <section id="services" class="services">
