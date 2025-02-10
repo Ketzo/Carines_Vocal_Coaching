@@ -1,220 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carine's Singing Lessons - Unlock Your Vocal Potential</title>
-<meta name="description" content="Professional singing lessons with Carine. Learn contemporary vocal techniques, book sessions, and boost your performance.">
-    <style>
-        /* Body */
-        body {
-            margin: 0;
-            padding: 0;
-            /* background-color: #FDF8E4; /* Cream background */
-            /* color: #4A2E19; /* Dark brown text color */
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/Background.jpg?raw=true');
-            background-size: cover; /* Ensures the image covers the entire page */
-            background-repeat: no-repeat; /* Prevents tiling */
-            background-attachment: fixed; /* Keeps the image fixed during scrolling */
-            background-position: center; /* Centers the image */
-            font-family: 'Arial', sans-serif;
-            color: #1A1A1A; /* Adjust text color for contrast */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carine's Singing Lessons - Unlock Your Vocal Potential</title>
+  <meta name="description" content="Professional singing lessons with Carine. Learn contemporary vocal techniques, book sessions, and boost your performance.">
+  <style>
+    /* Global Reset */
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
-        /* Navigation Menu */
-        nav {
-            position: sticky;
-            top: 0;
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/Background.jpg?raw=true');
-            background-size: cover; /* Ensures the image covers the entire page */
-            background-repeat: no-repeat; /* Prevents tiling */
-            background-attachment: fixed; /* Keeps the image fixed during scrolling */
-            background-position: center; /* Centers the image */
-            font-family: 'Arial', sans-serif;
-            color: #1A1A1A; /* Adjust text color for contrast */
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        nav a {
-            text-decoration: none;
-            color: #1A1A1A; /* Adjust text color for contrast */
-            margin: 0 15px;
-            font-size: 1.5em; /* Larger font size for emphasis */
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for a bold effect */
-            transition: color 0.3s, text-shadow 0.3s;
-        }
+    /* Body */
+    body {
+      background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/Background.jpg?raw=true');
+      background-size: cover; /* Ensures the image covers the entire page */
+      background-repeat: no-repeat; /* Prevents tiling */
+      background-attachment: fixed; /* Keeps the image fixed during scrolling */
+      background-position: center; /* Centers the image */
+      font-family: 'Arial', sans-serif;
+      color: #1A1A1A; /* Adjust text color for contrast */
+    }
 
-        nav a:hover {
-            color: #FFFFFF;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Slightly stronger shadow on hover */
-        }
+    /* Navigation Menu */
+    nav {
+      position: sticky;
+      top: 0;
+      background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/Background.jpg?raw=true');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: 'Arial', sans-serif;
+      color: #1A1A1A;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1A1A1A;
+      margin: 0 15px;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    nav a:hover {
+      color: #FFFFFF;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    }
 
+    /* Disable fixed backgrounds on mobile devices */
+    @media (max-width: 768px) {
+      body, nav {
+        background-attachment: scroll;
+      }
+    }
 
-        /* Header */
-        header {
-            background-color: #C19A6B; /* Warm brown */
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px; /* Rounded corners */
-            margin: 20px auto;
-            max-width: 1200px; /* Align with body width */
-            color: #FFF8E1; /* Cream text */
-        }
+    /* Header */
+    header {
+      background-color: #C19A6B;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 1200px;
+      color: #FFF8E1;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
 
-        header h1 {
-            font-size: 2.5em;
-        }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/hero.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+      color: #FFF8E1;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
 
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/hero.jpg?raw=true');
-            background-size: cover;
-            background-position: center;
-            border-radius: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            color: #FFF8E1;
-        }
+    /* Common Section Styles */
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      color: #4A2E19;
+    }
 
-        .hero h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
+    /* About Section: Always display image and text side-by-side */
+    .about-content {
+      display: flex;
+      flex-direction: row;  /* Force side-by-side layout */
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* Allows wrapping if needed on very small screens */
+    }
+    
+    .about-image {
+      width: 250px;  /* Adjust the image width as needed */
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    /* Allow the paragraph to take up remaining space */
+    .about-content p {
+      flex: 1;
+      margin: 0;
+    }
 
-        /* Common Section Styles */
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 20px auto;
-            background-color: #FFFFFF; /* White background for contrast */
-            border-radius: 15px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            color: #4A2E19; /* Text color */
-        }
-        .about-content {
-            display: flex;
-            flex-direction: column; /* Default to column for mobile devices */
-            align-items: center;
-            gap: 20px;
-        }
-        
-        /* On larger screens, switch to a row layout */
-        @media (min-width: 768px) {
-            .about-content {
-                flex-direction: row;  /* Side by side: image on left, text on right */
-                align-items: center;  /* Vertically center the items */
-            }
-        }
-        
-        /* Optional: adjust the image size for larger screens */
-        .about-image {
-            width: 250px; /* Adjust as needed */
-            height: auto;
-            border-radius: 10px;
-        }
-
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #C19A6B;
-            color: #FFF8E1;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 1200px;
-        }
-    </style>
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #C19A6B;
+      color: #FFF8E1;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#bookings">Bookings</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#bookings">Bookings</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
 
-    <!-- Header -->
-    <header id="home">
-        <h1>Carine's Singing Lessons</h1>
-    </header>
+  <!-- Header -->
+  <header id="home">
+    <h1>Carine's Singing Lessons</h1>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Professional lessons from an accredited coach</h1>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Professional lessons from an accredited coach</h1>
+  </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src='https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/carine_sing.jpg?raw=true' alt="Carine" class="about-image">
-            <p>
-                Hi, my name is Carine. I'm a graduate of Bachelor of Music from Excelsia College (formerly Wesley Institute). I specialize in Contemporary singing.
-                <br><br>
-                I've been a vocal coach since 2018. I perform at different gigs with my band at wedding ceremonies, receptions, functions, etc.
-                <br><br>
-                I'm also a session musician and songwriter. I've done multiple recording sessions for different albums, singles, projects, etc. I have performed for choir gigs and as lead singer for global C3 conference, Christmas productions, many end of degree recitals, etc.
-                <br><br>
-                Other music experiences also include my sound engineering internship with professional sound engineers. I've also conducted and transcribed songs for choir.
-            </p>
-        </div>
-        <h2>About Lessons</h2>
-            <p>I'm a professional musician that performs regularly at events, recording sessions, etc.
-            <br><br>
-            I'm constantly learning and updating my skills and knowledge about my craft.
-            <br><br>
-            I put my heart and soul into every single student I have and help them better themselves.
-            <br><br>
-            My lessons are fun, engaging and individually customized as everyone has a different voice.
-            <br><br>
-            From creative warm ups to unique exercises for vocal techniques, I made sure everyone is learning at their own speed.
-            <br><br>
-            I can help you get to know the strengths 💪and weaknesses of your voice, find your own musical style and even start writing your own songs.
-            <br><br>
-            My aim is to get you strong enough so you won't have to rely on me anymore! Book via enquiry or text. 🙂
-            </p>
-    </section>
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/carine_sing.jpg?raw=true" alt="Carine" class="about-image">
+      <p>
+        Hi, my name is Carine. I'm a graduate of Bachelor of Music from Excelsia College (formerly Wesley Institute). I specialize in Contemporary singing.
+        <br><br>
+        I've been a vocal coach since 2018. I perform at different gigs with my band at wedding ceremonies, receptions, functions, etc.
+        <br><br>
+        I'm also a session musician and songwriter. I've done multiple recording sessions for different albums, singles, projects, etc. I have performed for choir gigs and as lead singer for global C3 conference, Christmas productions, many end of degree recitals, etc.
+        <br><br>
+        Other music experiences also include my sound engineering internship with professional sound engineers. I've also conducted and transcribed songs for choir.
+      </p>
+    </div>
+    <h2>About Lessons</h2>
+    <p>
+      I'm a professional musician that performs regularly at events, recording sessions, etc.
+      <br><br>
+      I'm constantly learning and updating my skills and knowledge about my craft.
+      <br><br>
+      I put my heart and soul into every single student I have and help them better themselves.
+      <br><br>
+      My lessons are fun, engaging and individually customized as everyone has a different voice.
+      <br><br>
+      From creative warm ups to unique exercises for vocal techniques, I made sure everyone is learning at their own speed.
+      <br><br>
+      I can help you get to know the strengths 💪 and weaknesses of your voice, find your own musical style and even start writing your own songs.
+      <br><br>
+      My aim is to get you strong enough so you won't have to rely on me anymore! Book via enquiry or text. 🙂
+    </p>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Services</h2>
-        <ul>
-            <li>30 Minute sessions</li>
-            <li>60 Minute sessions</li>
-            <li>Online Zoom Lessons</li>
-            <li>Song Writing</li>
-            <li>Music Production</li>
-            <li>Mixing and Mastering</li>
-        </ul>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>30 Minute sessions</li>
+      <li>60 Minute sessions</li>
+      <li>Online Zoom Lessons</li>
+      <li>Song Writing</li>
+      <li>Music Production</li>
+      <li>Mixing and Mastering</li>
+    </ul>
+  </section>
 
-    <!-- Bookings Section -->
-    <section id="bookings">
-        <h2>Bookings</h2>
-        <p>Coming soon: Online booking form for your convenience.</p>
-        <p>Available scheduling</p>
-        <p>Terms and conditions</p>
-    </section>
+  <!-- Bookings Section -->
+  <section id="bookings">
+    <h2>Bookings</h2>
+    <p>Coming soon: Online booking form for your convenience.</p>
+    <p>Available scheduling</p>
+    <p>Terms and conditions</p>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: carineyee12@gmail.com</p>
-        <p>Phone: 0420361088</p>
-        <p>Studio Address: 47A Romney Crescent, Miller 2168</p>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: carineyee12@gmail.com</p>
+    <p>Phone: 0420361088</p>
+    <p>Studio Address: 47A Romney Crescent, Miller 2168</p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Carine's Singing Lessons. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Carine's Singing Lessons. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
