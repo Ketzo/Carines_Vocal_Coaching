@@ -88,25 +88,33 @@
       width: 100%;
       margin: 0;
       padding: 0;
-      /* No background or block styling so it blends with the page background */
+      /* Remove any block-specific styling so it blends into the background */
     }
+    
     .hero-content {
+      max-width: 1200px;  /* Limits content width for larger screens */
+      margin: 0 auto;     /* Centers the content horizontally */
       display: flex;
-      flex-direction: row;
       align-items: center;
     }
+    
     .hero-image {
       width: 50%;
       height: auto;
-      object-fit: contain; /* Ensures the entire image is visible */
+      object-fit: contain;  /* Ensures the full image is visible without cropping */
     }
+    
     .hero-text {
       width: 50%;
       padding: 20px;
       text-align: right;
-      background: transparent; /* No background color so it blends */
-      color: #FFF8E1;
+      background: transparent;  /* No background color to maintain blend */
+      color: #FFF8E1;           /* Adjust text color as needed */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  /* Vertically centers the text */
     }
+    
     .hero-text h1 {
       font-size: 2.5em;
       margin: 0;
