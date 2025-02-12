@@ -83,45 +83,46 @@
       font-size: 2.5em;
     }
 
-    /* Updated Hero Section CSS */
-    .hero {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      background: transparent; /* So it blends with the page background */
-    }
-    
-    .hero-content {
-      max-width: 1200px;      /* Limits the content width on larger screens */
-      margin: 0 auto;         /* Centers the container horizontally */
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Centers the children within the container */
-    }
-    
-    .hero-image {
-      flex: 1;                /* Allow the image container to grow */
-      max-width: 50%;         /* But not wider than 50% of the hero-content */
-      height: auto;
-      object-fit: contain;    /* Ensure the entire image is visible without cropping */
-    }
-    
-    .hero-text {
-      flex: 1;                /* Allow the text container to grow */
-      max-width: 50%;         /* Not wider than 50% of the hero-content */
-      padding: 20px;
-      text-align: left;       /* Adjust alignment as desired (left or right) */
-      background: transparent;/* No background color so it blends in */
-      color: #FFF8E1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Vertically centers the text */
-    }
-    
-    .hero-text h1 {
-      font-size: 2.5em;
-      margin: 0 0 10px 0;
-    }
+/* Updated Hero Section CSS */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent; /* Ensures it blends into the page background */
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;       /* Constrain the content to 1200px */
+  margin: 0 auto;          /* Center the container horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the combined flex items as a group */
+}
+
+.hero-image {
+  width: 45%;              /* Adjust width so there’s room for spacing */
+  margin-right: 5%;        /* Adds space between the image and text */
+  height: auto;
+  object-fit: contain;     /* Ensures the entire image is shown */
+}
+
+.hero-text {
+  width: 50%;              /* Takes up the remaining space */
+  padding: 20px;
+  text-align: left;        /* Aligns text to the left within its area */
+  background: transparent; /* No background color so it blends in */
+  color: #FFF8E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the text */
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+}
+
 
 
     /* Common Section Styles */
