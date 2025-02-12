@@ -18,12 +18,12 @@
 
     /* Body */
     body {
-      background-color: ##e6e0d5;
-      background-repeat: no-repeat; /* Prevents tiling */
-      background-attachment: fixed; /* Keeps the image fixed during scrolling */
-      background-position: center; /* Centers the image */
+      background-color: #e6e0d5;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
       font-family: 'Arial', sans-serif;
-      color: #333333; /* Adjust text color for contrast */
+      color: #333333;
     }
 
     /* Navigation Menu */
@@ -74,11 +74,11 @@
     }
     /* Header logo styling */
     .header-logo {
-      display: block;      /* Makes the image a block element */
-      margin: 0 auto 20px;  /* Centers the image and adds space below */
-      width: auto;         /* Uses the image's natural width */
-      height: auto;        /* Uses the image's natural height */
-      max-width: 100%;     /* Scales down responsively if needed */
+      display: block;
+      margin: 0 auto 20px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
     }
     header h1 {
       font-size: 2.5em;
@@ -86,17 +86,28 @@
 
     /* Hero Section */
     .hero {
-      text-align: right;
-      padding: 100px 20px;
-      background-image: url('https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/singer.jpg?raw=true');
-      background-size: auto;
-      background-position: left;
-      border-radius: 20px;
       margin: 20px auto;
       max-width: 1200px;
+      border-radius: 20px;
+      overflow: hidden; /* Ensures the rounded corners are applied */
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .hero-image {
+      width: 50%;
+      height: auto;
+      object-fit: contain; /* Ensures the whole image is shown */
+    }
+    .hero-text {
+      width: 50%;
+      padding: 20px;
+      text-align: right;
       color: #FFF8E1;
     }
-    .hero h1 {
+    .hero-text h1 {
       font-size: 2.5em;
       margin: 0;
     }
@@ -112,22 +123,19 @@
       color: #4A2E19;
     }
 
-    /* About Section: Always display image and text side-by-side */
+    /* About Section */
     .about-content {
       display: flex;
-      flex-direction: row;  /* Force side-by-side layout */
+      flex-direction: row;
       align-items: center;
       gap: 20px;
-      flex-wrap: wrap; /* Allows wrapping if needed on very small screens */
+      flex-wrap: wrap;
     }
-    
     .about-image {
-      width: 250px;  /* Adjust the image width as needed */
+      width: 250px;
       height: auto;
       border-radius: 10px;
     }
-    
-    /* Allow the paragraph to take up remaining space */
     .about-content p {
       flex: 1;
       margin: 0;
@@ -154,15 +162,20 @@
     <a href="#contact">Contact Us</a>
   </nav>
 
-  <!-- Header: Using a block image instead of a background image -->
+  <!-- Header -->
   <header id="home">
     <img src="https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/Singinglessons2.png?raw=true" alt="Carine's Singing Lessons Logo" class="header-logo">
-    <!-- h1>Carine's Singing Lessons</h1 -->
+    <!-- Optional header h1 can go here -->
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Professional lessons from an accredited coach</h1>
+    <div class="hero-content">
+      <img src="https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/singer.jpg?raw=true" alt="Hero Image" class="hero-image">
+      <div class="hero-text">
+        <h1>Professional lessons from an accredited coach</h1>
+      </div>
+    </div>
   </section>
 
   <!-- About Section -->
