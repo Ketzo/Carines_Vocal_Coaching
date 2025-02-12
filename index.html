@@ -84,49 +84,49 @@
       font-size: 2.5em;
     }
 
-    /* Updated Hero Section CSS */
+    /* Hero Section - Fully Centered */
     .hero {
+      display: flex;
+      justify-content: center;  /* Centers the hero-content horizontally */
+      align-items: center;      /* Centers the hero-content vertically (if height is set) */
       width: 100%;
       margin: 0;
       padding: 0;
-      align-items: center;
-      background: transparent; /* Ensures it blends into the page background */
+      background: transparent;
     }
     
     .hero-content {
-      width: 100%;
-      max-width: 1200px;       /* Constrain the content to 1200px */
-      margin: 0 auto;          /* Center the container horizontally */
-      justify-content: center; /* Centers the combined flex items as a group */
       display: flex;
       flex-direction: row;
+      justify-content: center;  /* Centers the image and text as a group */
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;        /* Constrain the width on larger screens */
     }
     
     .hero-image {
-      width: 45%;              /* Adjust width so there’s room for spacing */
-      margin-right: 5%;        /* Adds space between the image and text */
+      flex: 0 0 45%;            /* Takes up 45% of the space */
+      margin-right: 5%;         /* Creates space between image and text */
       height: auto;
-      object-fit: contain;     /* Ensures the entire image is shown */
+      object-fit: contain;      /* Ensures the entire image is shown */
     }
     
     .hero-text {
-      width: 50%;              /* Takes up the remaining space */
+      flex: 0 0 50%;            /* Takes up the remaining 50% */
       padding: 20px;
-      text-align: left;        /* Aligns text to the left within its area */
-      background: transparent; /* No background color so it blends in */
-      color: #4A2E19;
+      text-align: left;         /* Adjust this if you want left or right alignment */
+      background: transparent;  /* No background, so it blends with the page */
+      color: #FFF8E1;
       display: flex;
-      flex-direction: row;
-      justify-content: center; /* Vertically centers the text */
+      flex-direction: column;
+      justify-content: center;  /* Vertically centers the text within its container */
     }
     
     .hero-text h1 {
       font-size: 2.5em;
       margin: 0 0 10px 0;
     }
-
-
-
+    
     /* Common Section Styles */
     section {
       padding: 40px 20px;
@@ -187,15 +187,16 @@
     <div class="hero-content">
       <img src="https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/singer.jpg?raw=true" alt="Hero Image" class="hero-image">
       <div class="hero-text">
-        <h2>🎤 Master Your Voice with Expert Coaching 🎶</h2>
+        <h1>🎤 Master Your Voice with Expert Coaching 🎶</h1>
         <p>
           Take your singing to the next level with a credited vocal coach holding a Bachelor of Music degree.
           <br><br>
           Learn the fundamentals of contemporary singing with clear, effective techniques that make every lesson a full, enriching experience.
-        <p>
+        </p>
       </div>
     </div>
   </section>
+
 
   <!-- About Section -->
   <section class="about">
