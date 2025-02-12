@@ -72,7 +72,6 @@
       max-width: 1200px;
       color: #FFF8E1;
     }
-    /* Header logo styling */
     .header-logo {
       display: block;
       margin: 0 auto 20px;
@@ -84,12 +83,12 @@
       font-size: 2.5em;
     }
 
-    /* Hero Section */
+    /* Hero Section - Updated to blend into the background */
     .hero {
-      margin: 20px auto;
-      max-width: 1200px;
-      border-radius: 20px;
-      overflow: hidden; /* Ensures the rounded corners are applied */
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      /* No background or block styling so it blends with the page background */
     }
     .hero-content {
       display: flex;
@@ -99,12 +98,13 @@
     .hero-image {
       width: 50%;
       height: auto;
-      object-fit: contain; /* Ensures the whole image is shown */
+      object-fit: contain; /* Ensures the entire image is visible */
     }
     .hero-text {
       width: 50%;
       padding: 20px;
       text-align: right;
+      background: transparent; /* No background color so it blends */
       color: #FFF8E1;
     }
     .hero-text h1 {
@@ -165,7 +165,6 @@
   <!-- Header -->
   <header id="home">
     <img src="https://github.com/Ketzo/Carines_Vocal_Coaching/blob/main/Singinglessons2.png?raw=true" alt="Carine's Singing Lessons Logo" class="header-logo">
-    <!-- Optional header h1 can go here -->
   </header>
 
   <!-- Hero Section -->
