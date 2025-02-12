@@ -103,11 +103,14 @@
       align-items: center;
       width: 120%;
       max-width: 1200px;
-      margin: 0 auto; /* Centers the content horizontally */
+      position: relative;  /* Enables positioning adjustments */
+      left: 50%;           /* Move the left edge to 50% of the parent's width */
+      transform: translateX(-50%);  /* Shift the element back by half its own width */
+      /* margin: 0 auto; /* Centers the content horizontally */
     }
     
     .hero-image {
-      flex: 1 0 50%;
+      flex: 1 0 45%;
       margin-right: 5%;
       width: 300px;
       height: auto;
