@@ -82,12 +82,8 @@
 
     /* Hero Section */
     .hero {
-      display: flex;
-      justify-content: center; /* Centers the hero-content container horizontally */
-      align-items: center;
-      width: 100%;
-      margin: 0;
-      padding: 0;
+      max-width: 1200px; /* Constrain the overall section */
+      margin: 0 auto;    /* Center the section horizontally in the viewport */
       background: transparent;
     }
     
@@ -101,21 +97,17 @@
       justify-content: center;/* Centers children as a group */
     }
     
-    .hero-text {
-      flex: 0 0 50%;
-      padding: 20px;
-      text-align: center;     /* Center the text inside its container */
-      background: transparent;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .hero-image {
+      display: block; /* Removes inline spacing */
+      width: 100%;    /* Fills the container edge-to-edge */
+      height: auto;   /* Maintains the aspect ratio */
+      margin: 0;
+      padding: 0;
     }
     
-    .hero-image {
-      flex: 0 0 45%;
-      width: 100%;
-      height: auto;
-      object-fit: cover;      /* Use cover or contain based on your design */
+    .hero-text {
+      text-align: center; /* Centers the text inside the text block */
+      padding: 20px;      /* Adds some spacing around the text */
     }
 
     .hero-text h2 {
