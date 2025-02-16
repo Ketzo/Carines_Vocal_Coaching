@@ -83,42 +83,41 @@
     /* Hero Section */
     .hero {
       display: flex;
-      justify-content: center;
+      justify-content: center; /* Centers the hero-content container horizontally */
       align-items: center;
-      margin: 0;  /* Remove margin if necessary */
-      padding: 0; /* Remove padding if necessary */
+      width: 100%;
+      margin: 0;
+      padding: 0;
       background: transparent;
-      border: none;
     }
     
     .hero-content {
       width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .hero-image {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-      object-fit: cover;       /* or 'contain' depending on your desired effect */
-      object-position: center; /* Centers the image content within its container */
+      max-width: 1200px;      /* Limits the width */
+      margin: 0 auto;         /* Centers the container within the viewport */
+      display: flex;
+      flex-direction: row;    /* Keeps image and text in a row */
+      align-items: center;    /* Vertically centers the children */
+      justify-content: center;/* Centers children as a group */
     }
     
     .hero-text {
-      margin: 20px auto;
       flex: 0 0 50%;
       padding: 20px;
-      text-align: left;
-      background: transparent; /* Removes block-like background */
-      color: ##070808;
+      text-align: center;     /* Center the text inside its container */
+      background: transparent;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Vertically centers the text */
+      justify-content: center;
     }
     
+    .hero-image {
+      flex: 0 0 45%;
+      width: 100%;
+      height: auto;
+      object-fit: cover;      /* Use cover or contain based on your design */
+    }
+
     .hero-text h2 {
       font-size: 2em;
       margin: 0 0 10px;
