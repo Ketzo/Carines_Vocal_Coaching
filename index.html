@@ -83,31 +83,28 @@
     /* Hero Section */
     .hero {
       display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center;
-      background: transparent; /* Blends with the page background */
-      border: none;            /* Remove any border */
-      box-shadow: none;        /* Remove any shadow that looks like a border */
-      border-radius: 0;        /* Remove rounded corners */
+      margin: 0;  /* Remove margin if necessary */
+      padding: 0; /* Remove padding if necessary */
+      background: transparent;
+      border: none;
     }
     
     .hero-content {
-      /* width: 100%; */
-      max-width: 100%;
-      /*position: relative;  /* Enables positioning adjustments */
-      /*left: 50%;           /* Move the left edge to 50% of the parent's width */
-      /*transform: translateX(-50%);  /* Shift the element back by half its own width */
-      margin: 0 auto; /* Centers the content horizontally */
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
     
     .hero-image {
       display: block;
       width: 100%;
       height: auto;
+      margin: 0;
       padding: 0;
-      align-self: center;
-      object-fit: contain; /* Ensures the entire image is visible */
+      border: none;
+      object-fit: contain; /* or cover if you prefer a different behavior */
     }
     
     .hero-text {
@@ -171,24 +168,13 @@
       flex: 1;
     }
     .about-me-text h2 {
-      /*font-size: 2em;*/
       text-align: center;
-      margin-left: -80px;
-    }
-    .about-me-text p {
-      /*font-size: 1.2em;*/
     }
     
     /* About Lessons Block */
     .about-lessons {
       margin-top: 30px; /* Adds space between the two blocks */
     }
-    /*.about-lessons h2 {
-      font-size: 2em;
-    }
-    .about-lessons p {
-      font-size: 1.2em;
-    }*/
 
     /* Footer */
     footer {
